@@ -1,0 +1,39 @@
+/* styles.css */
+#brainrot-player-container {
+    position: fixed;
+    bottom: 20px; /* Position from bottom */
+    right: 20px;  /* Position from right */
+    width: 320px; /* Adjust as needed */
+    height: 180px; /* Adjust for 16:9 aspect ratio */
+    z-index: 9999; /* Make sure it's on top */
+    border: 2px solid #6A0DAD; /* A fun purple border */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    background-color: #1e1e1e; /* Fallback background */
+    display: none; /* Hidden by default */
+    overflow: hidden; /* Ensures iframe fits neatly */
+    resize: both; /* Allows user to resize */
+    min-width: 160px; /* Minimum width for usability */
+    min-height: 90px; /* Minimum height for usability */
+  }
+  
+  #brainrot-player-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe border */
+  }
+  
+  /* Simple drag handle (optional, for better UX with resizing) */
+  #brainrot-player-container::before {
+    content: 'DRAG';
+    position: absolute;
+    top: -18px;
+    left: 0;
+    font-size: 10px;
+    background: #6A0DAD;
+    color: white;
+    padding: 2px 5px;
+    cursor: grab;
+    user-select: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
