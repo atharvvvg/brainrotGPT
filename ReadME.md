@@ -1,0 +1,1 @@
+stupid chrome extension. plays brainrot while chatgpt thinks. i don't even use chatgpt. this extension does not even work because i am yet to figure out a js script to find when chatgpt is thinking. gn.
